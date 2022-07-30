@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(https://images.hdqwalls.com/wallpapers/abstract-simple-background-4k-lp.jpg);
+}
+header{
+    height: 100px;
+    border-bottom: 2px solid rgb(255, 255, 255,0.10);
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/* header start */
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.container nav .logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+.container nav .menu{
+    display: flex;
+    column-gap: 48px;
+}
+.container nav .menu ul{
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+    align-items: center;
+}
+.container nav .menu ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+.container nav .menu ul li a:hover{
+    color: #0ba2ce;
+}
+nav .menu .menu-button{
+    color: white;
+    text-decoration: none;
+    padding: 15px 24px;
+    border-radius: 56px;
+    background-color: rgb(255, 255,255,0.08);
+    transition: all .25s ease;
+}
+nav .menu .menu-button:hover{
+    background-color:#0ba2ce;
+    color: white;
+}
+/* header end */
+
+/* section start */
+ .content{
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+ }
+ .content h1{
+    text-align: center;
+    font-size: 60px;
+    text-transform: capitalize;
+ }
+ .content p{
+    text-align: center;
+    font-size:24px;
+    margin-top: 30px;
+ }
+ .content .links{
+    display: flex;
+    justify-content: center;
+    column-gap: 48px;
+    margin-top: 30px;
+ }
+ .content .links a{
+    color:black;
+    text-decoration: none;
+    padding: 18px;
+    background-color: white;
+    border-radius: 56px;
+    width: 200px;
+    text-align: center;
+    transition: all .25 ease-in;
+ }
+ .content .links a:hover{
+    background-color: black;
+    color: white;
+ }
+/* section end */
+/* responsive start */
+@media(max-width:576px){
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .menu ul{
+        column-gap: 20px;
+    }
+    .menu-button{
+        display: none;
+    }
+    .content{
+        padding-top: 50px;
+    }
+    .content h1{
+        font-size: 36px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .content .links{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .content .links a{
+        padding: 14px;
+        width: 90%;
+    }
+}
+/* responsive end */
